@@ -33,7 +33,7 @@ voteRouter.post('/vote/add',async (req,res)=>{
          await newvote.save()
          let arr = []
         for(let i = 0; i < 3; i++){
-          arr.push({ip:randomstring.generate(7),option:"option_3"})
+          arr.push({ip:randomstring.generate(7),option:"option_1"})
         }
          await voteModel.insertMany(arr)
 
